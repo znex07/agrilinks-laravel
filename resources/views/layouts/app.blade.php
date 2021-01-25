@@ -57,12 +57,20 @@
             <li class="nav-item">
               <a class="nav-link" href="/contact_us"><span class="fas fa-mail-bulk text-success"></span> Contact</a>
             </li>
-          
-          <li class="nav-item active">
-            <a class="nav-link" href="/home"><span class="fas fa-user text-success"></span> Be a member
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="/home"><span class="fas fa-user text-success"></span> Be a member
             </a>
-          </li>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">                    
+                    <a class="dropdown-item" href="/register" >
+                       <span class="fas fa-cogs text-success"></span> Register
+                    </a>
+                    <a class="dropdown-item" href="/login">
+                       <span class="fas fa-user text-danger"></span> Login
+                    </a>
+
+                </div>
             
+          </li>
             @endif
 
           @else
