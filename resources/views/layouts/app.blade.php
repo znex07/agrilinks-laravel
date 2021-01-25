@@ -123,7 +123,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
 
-    <main class="py-4">
+    <main class="py-4 p-4">
         @yield('content')
     </main>
   <!-- /.container -->

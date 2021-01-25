@@ -3,7 +3,7 @@
 @section('content')
 
                 <!-- Page Content -->
-  <div class="container">
+<div class="container">
 <div class="row justify-content-center">
     <!-- Heading Row -->
     <div class="row align-items-center my-5">

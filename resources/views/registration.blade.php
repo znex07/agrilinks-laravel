@@ -5,7 +5,7 @@
 <div class="row justify-content-center">
     
 
-    <div class="jumbotron col-9" >
+    <div class="jumbotron col-11" >
      @if (session('status'))
         <div class="alert alert-success" role="alert">
             {{ session('status') }}
