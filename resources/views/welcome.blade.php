@@ -23,7 +23,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-center">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -37,7 +37,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-center">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -126,7 +126,7 @@
 
     </div>
     <!-- Call to Action Well -->
-    <div class="card bg-success my-5 py-4 text-center " style="width:1000px">
+    <div class="card justify-text-center bg-success my-5 py-4 text-center " style="width:1000px">
       <div class="card-body">
         <h4 class="text-white">We are committed to high ethical standards in the way we conduct our business. </h4>
       </div>

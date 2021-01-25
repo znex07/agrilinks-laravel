@@ -65,7 +65,7 @@
                        <span class="fas fa-cogs text-success"></span> Register
                     </a>
                     <a class="dropdown-item" href="/login">
-                       <span class="fas fa-user text-danger"></span> Login
+                       <span class="fas fa-user text-primary"></span> Login
                     </a>
 
                 </div>
