@@ -33,7 +33,7 @@
     <div id="app">
     <div class="se-pre-con"></div>
     <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
       <a class="navbar-brand" href="/"><img src="{{asset('img/favicon.png')}}"> AgriLinks</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

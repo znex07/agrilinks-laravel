@@ -14,12 +14,25 @@
   <!-- Custom styles for this template -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link href="{{ asset('css/shop-homepage.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/business.css') }}" rel="stylesheet">
   <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script>
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+    </script>
 
 </head>
 
 <body>
 
+    <div class="se-pre-con"></div>
+    <div class="content">
+	</div>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
