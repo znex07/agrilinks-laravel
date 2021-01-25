@@ -15,6 +15,7 @@
         <h3 class="font-weight-light">Welcome to AgriLinks</h3>
         <p>Website for Filipino farmers, food distributors and consumer</p>
         <a class="btn btn-primary" href="/equipment_registration">Register Equipment now!</a>
+        
       </div>
       <!-- /.col-md-4 -->
     </div>
