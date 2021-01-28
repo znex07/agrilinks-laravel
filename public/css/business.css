@@ -44,3 +44,19 @@ body {
 	background: url('../img/Preloader_11.gif') center no-repeat #fff;
 }
 
+.login-div{
+  float: right;
+  opacity: 0.8;
+}
+
+#hd1{
+  text-align: left;
+  color: greenyellow;
+  /* font-size: 500%;
+  display: block;
+  border */
+}
+
+#h-page{
+  height: 850px;
+}

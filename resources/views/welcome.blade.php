@@ -3,22 +3,20 @@
 @section('content')
 
 <!-- Page Content -->
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container" id="h-page">
+  <h1 id="hd1">Welcome to AgriLinks</h1>
+  <p>Website for Filipino farmers, food distributors and consumer</p>
+    <!-- login place -->
+    <div class="login-div">
         <!-- Heading Row -->
         <div class="row align-items-center my-5">
           <div>
-            <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('img/img1.jpg') }}" alt="">
-          </div>
-          <div class="col-lg-5">
-            <h3 class="font-weight-light text-success">Welcome to AgriLinks</h3>
-            <p>Website for Filipino farmers, food distributors and consumer</p>
-            {{-- <a class="btn btn-primary" href="/equipment_registration">Register Equipment now!</a> --}}
             @guest
             <div class="card">
             <div class="card-body" >
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
+            {{-- <a class="btn btn-primary" href="/equipment_registration">Register Equipment now!</a> --}}
                             <div class="form-group row">
                                 <label for="email" class="col-md-4 col-form-label text-md-center">{{ __('E-Mail Address') }}</label>
 
@@ -79,6 +77,8 @@
           @endguest
         </div>
     </div>
+</div>
+    <!-- end of login -->
     <!-- /.row -->
     <div class="row mb-5">
         <div class="col">
@@ -193,5 +193,4 @@
     </div>
     <!-- /.row -->
 {{-- </div> --}}
-</div>
 @endsection
