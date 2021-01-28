@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <!-- Heading Row -->
         <div class="row align-items-center my-5">
-          <div class="col-lg-7">
+          <div>
             <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('img/img1.jpg') }}" alt="">
           </div>
           <div class="col-lg-5">

@@ -3,8 +3,13 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/LICENSE)
  */
+
 body {
   padding-top: 70px;
+  /* background-color: #ccccc7; */
+  background-image: url('/img/img1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .loader,
 .loader:after {
