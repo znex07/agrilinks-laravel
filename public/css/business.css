@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/LICENSE)
  */
 body {
-  padding-top: 56px;
+  padding-top: 70px;
 }
 .loader,
 .loader:after {
@@ -12,7 +12,7 @@ body {
     width: 10em;
     height: 10em;
 }
-.loader {            
+.loader {
     margin: 60px auto;
     font-size: 10px;
     position: relative;
@@ -38,3 +38,4 @@ body {
 	z-index: 9999;
 	background: url('../img/Preloader_11.gif') center no-repeat #fff;
 }
+

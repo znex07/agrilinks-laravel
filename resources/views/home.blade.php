@@ -9,6 +9,7 @@
         <div class="list-group">
             <a class="list-group-item" href="/equipment_registration">Register Equipment</a>
             <a class="list-group-item" href="/equipment_shop">Shop</a>
+            <a class="list-group-item" href="/product">Add new Product</a>
         </div>
 
       </div>

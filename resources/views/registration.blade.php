@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 <div class="row justify-content-center">
-    
+
 
     <div class="jumbotron col-11" >
      @if (session('status'))
@@ -110,8 +110,15 @@
 
           <div id="jsGrid"></div>
         </div>
-
+<div class="row">
+    <div class="col-6">
         <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </div>
+    <div class="col-6">
+            <button type="button" class="btn btn-success btn-block" onclick="window.location='{{ route("generate-pdf") }}'">Print</button>
+
+    </div>
+</div>
 </form>
 </div>
 <script>
@@ -131,14 +138,8 @@
         { Name: "Floating tiller", Id: 2 },
         { Name: "Floating tiller", Id: 3 }
     ];
-    var equipmmenttype = [
-        { Name: "Select Equipment type", Id: 0 },
-        { Name: "Four-wheel Tractor", Id: 1 },
-        { Name: "Floating tiller", Id: 2 },
-        { Name: "Cultivator", Id: 3 },
-        { Name: "Power Tiller", Id: 4 },
-        { Name: "Micro Tiller", Id: 5 }
-    ];
+
+    var equipmmenttype = {!! $machine_type !!};
     var year = [
         { Name: "1970", Id: 0 },
         { Name: "1971", Id: 1 },
@@ -160,9 +161,9 @@
 
         fields: [
             { type: "control",width:60 },
-            { name: "MACHINERY EQUIPMENT TYPE", type: "select",items: equipmmenttype, valueField: "Id", textField: "Name", width: 150},
+            { name: "MACHINERY EQUIPMENT TYPE", type: "select",items: equipmmenttype, valueField: "id", textField: "machine_name", width: 150},
             { name: "CAPACITY", type: "number", width: 80 },
-            { name: "ATTACHMENTS/ACCESSORIES", type: "select",items: equipmmenttype, valueField: "Id", textField: "Name", width: 250 },
+            { name: "ATTACHMENTS/ACCESSORIES", type: "select",items: equipmmenttype, valueField: "id", textField: "machine_name", width: 250 },
             { name: "NAME OF SUPPLIER", type: "select", items: countries, valueField: "Id", textField: "Name" },
             { name: "SUPPLIER BRANCH ADDRESS", type: "text", width:300 },
             { name: "YEAR ACQUIRED", type: "number", width:80 },

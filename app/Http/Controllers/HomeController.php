@@ -26,10 +26,10 @@ class HomeController extends Controller
     {
 
         $titles = DB::table('equipment_registration')->get();
-
         return view('home',['titles' => $titles]);
     }
     public function equipment_registration(){
-        return view('registration');        
+        $machine_type = DB::table('machineries')->get();
+        return view('registration',['machine_type'=> $machine_type]);
     }
 }
