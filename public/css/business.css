@@ -10,6 +10,9 @@ body {
   background-image: url('/img/img1.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 .loader,
 .loader:after {
@@ -44,9 +47,8 @@ body {
 	background: url('../img/Preloader_11.gif') center no-repeat #fff;
 }
 
-.login-div{
-  float: right;
-  opacity: 0.8;
+#login-div{
+  background-color: blanchedalmond;
 }
 
 #hd1{
@@ -75,4 +77,9 @@ body {
   padding: 1%;
   display: block;
   object-fit: contain;
+  background-color:hsla(120,100%,75%,0.8);
+}
+
+.row{
+  width: auto;
 }
