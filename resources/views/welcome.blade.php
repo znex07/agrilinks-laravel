@@ -80,6 +80,7 @@
 </div>
     <!-- end of login -->
     <!-- /.row -->
+  <div id="n-page">
     <div class="row mb-5">
         <div class="col">
                 <div class="card h-100 border-warning">
@@ -139,9 +140,11 @@
             </div>
         </div>
 
+     </div>
     </div>
 
     <!-- Content Row -->
+    <div id="m-page">
     <div class="row">
       <div class="col mb-5">
         <div class="card h-100">
@@ -179,9 +182,10 @@
         </div>
       </div>
       <!-- /.col-md-4 -->
-
+     </div>
     </div>
-    <!-- Call to Action Well -->
+
+        <!-- Call to Action Well -->
     <div class="row">
     <div class="col-12 mb-5">
     <div class="card justify-text-center bg-success my-6 py-4 text-center ">

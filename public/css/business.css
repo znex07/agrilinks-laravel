@@ -59,4 +59,20 @@ body {
 
 #h-page{
   height: 850px;
+  width: auto;
+}
+
+#n-page{
+  height: 600px;
+  width: auto;
+  margin: 1%;
+  display: block;
+}
+
+#m-page{
+  height: 280px;
+  width: auto;
+  padding: 1%;
+  display: block;
+  object-fit: contain;
 }
