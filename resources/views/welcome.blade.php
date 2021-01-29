@@ -5,11 +5,11 @@
 <!-- Page Content -->
 <div class="container" id="h-page">
     <!-- login place -->
-    <div class="login-div">
+    <div>
         <!-- Heading Row -->
         <div class="row align-items-center my-5">
-          <div>
-          <h1 id="hd1">Welcome to AgriLinks</h1>
+          <div id="login-div">
+            <h1 id="hd1">Welcome to AgriLinks</h1>
             <p>Website for Filipino farmers, food distributors and consumer</p>
             @guest
             <div class="card">
@@ -176,7 +176,7 @@
             <h2 class="card-title">About</h2>
             <p class="card-text">We provide our customers with safe, high quality, processed goods at competitive pricing.</p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer"id="i-foot">
             <a href="#" class="btn btn-primary btn-sm">More Info</a>
           </div>
         </div>

@@ -72,14 +72,20 @@ body {
 }
 
 #m-page{
-  height: 280px;
+  height: 50%;
   width: auto;
-  padding: 1%;
+  padding-top: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
   display: block;
   object-fit: contain;
-  background-color:hsla(120,100%,75%,0.8);
+  background-color:rgb(255, 255, 255);
 }
 
 .row{
   width: auto;
+}
+
+#i-foot{
+    background-image: linear-gradient(rgb(159, 243, 159),white,white);
 }
