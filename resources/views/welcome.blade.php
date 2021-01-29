@@ -5,6 +5,7 @@
 <!-- Page Content -->
 <div class="container" id="h-page">
   <h1 id="hd1">Welcome to AgriLinks</h1>
+
   <p>Website for Filipino farmers, food distributors and consumer</p>
     <!-- login place -->
     <div class="login-div">
@@ -86,8 +87,9 @@
                 <div class="card h-100 border-warning">
                   <div class="card-body">
                     <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/Agri-chief-warns-traders-of-jacking-up-prices-of-pork-1536x1024.jpg" alt="">
-                    <h5 class="card-title">Agri chief warns traders of jacking up prices of pork, other food items</h5>
-                    <p class="card-text">Agriculture Secretary William Dar warns unscrupulous traders and wholesalers who unreasonably jack up prices of basic food items particularly pork, saying that a government task force is now monitoring their activities and if found guilty would face stiff penalties under the law.</p>
+                    <h5 class="card-title m-2">Agri chief warns traders of jacking up prices of pork, other food items</h5>
+                    <p class="card-text">Agriculture Secretary William Dar warns unscrupulous traders and wholesalers who unreasonably jack up prices of
+                        basic food items particularly pork...</p>
                   </div>
                   <div class="card-footer border-warning">
                     <a href="https://www.da.gov.ph/agri-chief-warns-traders-of-jacking-up-prices-of-pork-other-food-items/" target="blank" class="btn btn-primary btn-sm">Read More</a>
@@ -100,9 +102,9 @@
                 <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
 
                 <h5 class="card-title">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
-                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant health from FIT Corea Trading Philippines, Inc., on January 20, 2021.
+                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant health
+                    from ...
 
-                    The machines, which were turned over by FIT Corea President Philip Kim, include a long-range spraying machine, a multi-crop lifter, and two units of Triple Disinfection System.</p>
               </div>
               <div class="card-footer border-warning">
                 <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm">Read More</a>
@@ -115,9 +117,9 @@
                 <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
 
                 <h5 class="card-title">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
-                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant health from FIT Corea Trading Philippines, Inc., on January 20, 2021.
+                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant
+                    health...
 
-                    The machines, which were turned over by FIT Corea President Philip Kim, include a long-range spraying machine, a multi-crop lifter, and two units of Triple Disinfection System.</p>
               </div>
               <div class="card-footer border-warning">
                 <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm">Read More</a>
@@ -130,9 +132,8 @@
                 <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
 
                 <h5 class="card-title">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
-                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant health from FIT Corea Trading Philippines, Inc., on January 20, 2021.
+                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant ...
 
-                    The machines, which were turned over by FIT Corea President Philip Kim, include a long-range spraying machine, a multi-crop lifter, and two units of Triple Disinfection System.</p>
               </div>
               <div class="card-footer border-warning">
                 <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm">Read More</a>

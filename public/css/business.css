@@ -8,8 +8,15 @@ body {
   padding-top: 70px;
   /* background-color: #ccccc7; */
   background-image: url('/img/img1.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  /* background-repeat: no-repeat; */
+  width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 .loader,
 .loader:after {
@@ -75,4 +82,25 @@ body {
   padding: 1%;
   display: block;
   object-fit: contain;
+}
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
