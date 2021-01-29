@@ -4,16 +4,15 @@
 
 <!-- Page Content -->
 <div class="container" id="h-page">
-  <h1 id="hd1">Welcome to AgriLinks</h1>
-
-  <p>Website for Filipino farmers, food distributors and consumer</p>
-    <!-- login place -->
+        <!-- login place -->
     <div class="login-div">
         <!-- Heading Row -->
         <div class="row align-items-center my-5">
           <div>
+          <h1 id="hd1">Welcome to AgriLinks</h1>
+            <p>Website for Filipino farmers, food distributors and consumer</p>
             @guest
-            <div class="card">
+            <div class="card" id="login">
             <div class="card-body" >
                         <form method="POST" action="{{ route('login') }}">
                             @csrf

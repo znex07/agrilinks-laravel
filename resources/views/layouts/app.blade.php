@@ -51,7 +51,7 @@
             </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="fas fa-info-circle text-success"></span> News</a>
+              <a class="nav-link" href="/news"><span class="fas fa-info-circle text-success"></span>Agri News</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact_us"><span class="fas fa-mail-bulk text-success"></span> Contact</a>
@@ -83,7 +83,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="fas fa-info-circle text-success"></span>Agri News</a>
+              <a class="nav-link" href="/news"><span class="fas fa-info-circle text-success"></span>Agri News</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact_us"><span class="fas fa-mail-bulk text-success"></span> Contact</a>
@@ -125,7 +125,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="footer py-3 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Segovia Development 2020</p>
         </div>

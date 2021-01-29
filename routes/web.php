@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/news', function () {
+    return view('news');
+});
 Route::get('/equipment_shop', 'App\Http\Controllers\ProductsController@show');
 Route::get('/contact_us', function () {
     return view('contact');
