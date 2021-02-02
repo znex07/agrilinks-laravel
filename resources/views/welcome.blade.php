@@ -84,63 +84,24 @@
 <!-- /.row -->
 <div id="n-page">
     <div class="row mb-5">
-        <div class="col">
-            <div class="card h-100 border-warning">
-                  <div class="card-body">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/Agri-chief-warns-traders-of-jacking-up-prices-of-pork-1536x1024.jpg" alt="">
-                    <h5 class="card-title m-2">Agri chief warns traders of jacking up prices of pork, other food items</h5>
-                    <p class="card-text">Agriculture Secretary William Dar warns unscrupulous traders and wholesalers who unreasonably jack up prices of
-                        basic food items particularly pork...</p>
-                  </div>
-                  <div class="card-footer border-warning">
-                    <a href="https://www.da.gov.ph/agri-chief-warns-traders-of-jacking-up-prices-of-pork-other-food-items/" target="blank" class="btn btn-primary btn-sm btn-block">Read More</a>
-                  </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card h-100 border-warning">
-              <div class="card-body ">
-                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
 
-                <h5 class="card-title m-2">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
-                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant health
-                    from ...
+        @foreach($posts as $post)
+        <div class="col">
+            <div class="card" style="width: 100%; height: 450px;">
+                <img src="{{ Voyager::image( $post->image ) }}" style="width: 100%; height: 200px;">
+                <div class="card-body">
+                    <a href="/post/{{ $post->slug }}">
+                        <span><h5>{{ $post->title }}</h5></span>
+                    </a>
 
-              </div>
-              <div class="card-footer border-warning">
-                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm btn-block">Read More</a>
-              </div>
+                    <p class="card-text">{!! Str::limit($post->body,200) !!}</p>
+                </div>
+                <div class="card-footer">
+                <button class="btn btn-info btn-block">Read more</button>
+            </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card h-100 border-warning">
-              <div class="card-body ">
-                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
-
-                <h5 class="card-title m-2">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
-                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant
-                    health...
-
-              </div>
-              <div class="card-footer border-warning">
-                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm btn-block">Read More</a>
-              </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100 border-warning">
-              <div class="card-body ">
-                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
-
-                <h5 class="card-title m-2">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
-                <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant ...
-
-              </div>
-              <div class="card-footer border-warning">
-                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm btn-block">Read More</a>
-              </div>
-            </div>
-        </div>
+        @endforeach
 
      </div>
     </div>
@@ -155,8 +116,7 @@
             <p class="card-text">To provide our employees with a secure, safe, friendly and team-oriented environment in which all employees are valued.</p>
           </div>
           <div class="card-footer i-foot">
-            <a href="#" class="btn btn-primary btn-sm btn-block
-            ">More Info</a>
+            <a href="#" class="btn btn-primary btn-sm">More Info</a>
           </div>
         </div>
       </div>

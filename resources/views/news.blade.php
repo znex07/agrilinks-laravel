@@ -5,22 +5,21 @@
     <div class="row py-3">
         @foreach($posts as $post)
         <div class="col">
-            <div class="card" style="width: 18rem;">
-                <a href="/post/{{ $post->slug }}">
-                    {{-- <img class="card-img-top" src="https://www.da.gov.ph/wp-content/uploads/2021/01/Agri-chief-warns-traders-of-jacking-up-prices-of-pork-1536x1024.jpg" alt="Card image cap"> --}}
-                </a>
-                <img src="{{ Voyager::image( $post->image ) }}" style="width:100%">
+            <div class="card" style="width: 100%; height: 450px;">
+                <img src="{{ Voyager::image( $post->image ) }}" style="width: 100%; height: 200px;">
                 <div class="card-body">
-                    <span><h3>{{ $post->title }}</h3></span>
+                    <a href="/post/{{ $post->slug }}">
+                        <span><h5>{{ $post->title }}</h5></span>
+                    </a>
 
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">{!! Str::limit($post->body,200) !!}</p>
                 </div>
                 <div class="card-footer">
                 <button class="btn btn-info btn-block">Read more</button>
             </div>
+            </div>
         </div>
-    </div>
-    @endforeach
+        @endforeach
     </div>
 </div>
 @endsection
