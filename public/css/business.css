@@ -21,6 +21,7 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
+    opacity: 0.9;
   }
 .loader,
 .loader:after {
@@ -56,12 +57,17 @@ body {
 }
 
 #login-div{
-  background-color: blanchedalmond;
+  background-color: rgb(250, 239, 223);
+  width: 600px;
+  padding: 10px;
+}
+#login-div::before{
+    opacity: 0.65;
 }
 
 #hd1{
-  text-align: left;
-  color: greenyellow;
+  text-align: center;
+  color: rgb(0, 0, 0);
   /* font-size: 500%;
   display: block;
   border */
@@ -80,19 +86,20 @@ body {
 }
 
 #m-page{
-  height: 280px;
+  height: 50%;
   width: auto;
-  padding: 1%;
+  padding-top: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
   display: block;
   object-fit: contain;
-  background-color:hsla(120,100%,75%,0.8);
+  background-color:rgb(255, 255, 255);
 }
 
 .row{
   width: auto;
 }
 
-#login{
-    width: 500px;
-    opacity: 0.8;
+.i-foot{
+    background-image: linear-gradient(white,white,rgb(159, 243, 159));
 }

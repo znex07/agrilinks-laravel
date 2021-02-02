@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\PDFController;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,7 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/news', function () {
-    return view('news');
+    $posts = Post::all();
+    return view('news', compact('posts'));
 });
 Route::get('/equipment_shop', 'App\Http\Controllers\ProductsController@show');
 Route::get('/contact_us', function () {
@@ -35,3 +36,8 @@ Route::post('save_equipment', 'App\Http\Controllers\EquipmentController@store');
 Route::get('product', 'App\Http\Controllers\ProductsController@index');
 Route::post('add_product', 'App\Http\Controllers\ProductsController@store');
 Route::get('generate-pdf', [PDFController::class, 'generatePDF'])->name('generate-pdf');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

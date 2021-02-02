@@ -4,19 +4,18 @@
 
 <!-- Page Content -->
 <div class="container" id="h-page">
-        <!-- login place -->
-    <div class="login-div">
+    <!-- login place -->
+    <div>
         <!-- Heading Row -->
-        <div class="row align-items-center my-5">
-          <div>
-          <h1 id="hd1">Welcome to AgriLinks</h1>
-            <p>Website for Filipino farmers, food distributors and consumer</p>
+        <div class="row justify-content-center my-5">
+          <div id="login-div" class="col-6 align-self-center">
+            <h1 id="hd1">Welcome to AgriLinks</h1>
+            <p class="text-center">Website for Filipino farmers, food distributors and consumer</p>
             @guest
-            <div class="card" id="login">
-            <div class="card-body" >
+            <div class="card rounded" id="login">
+            <div class="card-body bg-light text-success">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
-            {{-- <a class="btn btn-primary" href="/equipment_registration">Register Equipment now!</a> --}}
                             <div class="form-group row">
                                 <label for="email" class="col-md-4 col-form-label text-md-center">{{ __('E-Mail Address') }}</label>
 
@@ -24,9 +23,9 @@
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                     @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
                                     @enderror
                                 </div>
                             </div>
@@ -38,9 +37,9 @@
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                     @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
                                     @enderror
                                 </div>
                             </div>
@@ -64,26 +63,29 @@
                                     </button>
 
                                     @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Forgot Your Password?') }}
-                                        </a>
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
                                     @endif
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-          </div>
-          @endguest
+            </div>
+            @endguest
+        </div>
+        <div class="row justify-content-center">
+        <a class="btn btn-success btn-lg" href="/equipment_registration">Register Equipment now!</a>
         </div>
     </div>
 </div>
-    <!-- end of login -->
-    <!-- /.row -->
-  <div id="n-page">
+<!-- end of login -->
+<!-- /.row -->
+<div id="n-page">
     <div class="row mb-5">
         <div class="col">
-                <div class="card h-100 border-warning">
+            <div class="card h-100 border-warning">
                   <div class="card-body">
                     <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/Agri-chief-warns-traders-of-jacking-up-prices-of-pork-1536x1024.jpg" alt="">
                     <h5 class="card-title m-2">Agri chief warns traders of jacking up prices of pork, other food items</h5>
@@ -91,7 +93,7 @@
                         basic food items particularly pork...</p>
                   </div>
                   <div class="card-footer border-warning">
-                    <a href="https://www.da.gov.ph/agri-chief-warns-traders-of-jacking-up-prices-of-pork-other-food-items/" target="blank" class="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://www.da.gov.ph/agri-chief-warns-traders-of-jacking-up-prices-of-pork-other-food-items/" target="blank" class="btn btn-primary btn-sm btn-block">Read More</a>
                   </div>
               </div>
         </div>
@@ -100,13 +102,13 @@
               <div class="card-body ">
                 <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
 
-                <h5 class="card-title">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
+                <h5 class="card-title m-2">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
                 <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant health
                     from ...
 
               </div>
               <div class="card-footer border-warning">
-                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm">Read More</a>
+                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm btn-block">Read More</a>
               </div>
             </div>
         </div>
@@ -115,13 +117,13 @@
               <div class="card-body ">
                 <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
 
-                <h5 class="card-title">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
+                <h5 class="card-title m-2">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
                 <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant
                     health...
 
               </div>
               <div class="card-footer border-warning">
-                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm">Read More</a>
+                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm btn-block">Read More</a>
               </div>
             </div>
         </div>
@@ -130,12 +132,12 @@
               <div class="card-body ">
                 <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.da.gov.ph/wp-content/uploads/2021/01/0-1536x1026.jpg" alt="">
 
-                <h5 class="card-title">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
+                <h5 class="card-title m-2">Turnover of Modernized Equipment from FIT Corea Trading Philippines, Inc (Jan. 20, 2021)</h5>
                 <p class="card-text">Agriculture Secretary William Dar received modernized machines and equipment to ensure human, animal, and plant ...
 
               </div>
               <div class="card-footer border-warning">
-                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm">Read More</a>
+                <a href="https://www.da.gov.ph/gallery/turnover-of-modernized-equipment-from-fit-corea-trading-philippines-inc-jan-20-2021/" target="black" class="btn btn-primary btn-sm btn-block">Read More</a>
               </div>
             </div>
         </div>
@@ -152,8 +154,9 @@
             <h2 class="card-title">Mission</h2>
             <p class="card-text">To provide our employees with a secure, safe, friendly and team-oriented environment in which all employees are valued.</p>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
+          <div class="card-footer i-foot">
+            <a href="#" class="btn btn-primary btn-sm btn-block
+            ">More Info</a>
           </div>
         </div>
       </div>
@@ -164,7 +167,7 @@
             <h2 class="card-title">Vision</h2>
             <p class="card-text">To provide our growers with a stable home to deliver their goods with financial returns above the industry averages.</p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer i-foot">
             <a href="#" class="btn btn-primary btn-sm">More Info</a>
           </div>
         </div>
@@ -176,7 +179,7 @@
             <h2 class="card-title">About</h2>
             <p class="card-text">We provide our customers with safe, high quality, processed goods at competitive pricing.</p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer i-foot">
             <a href="#" class="btn btn-primary btn-sm">More Info</a>
           </div>
         </div>

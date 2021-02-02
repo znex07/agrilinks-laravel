@@ -26,6 +26,7 @@ class HomeController extends Controller
     {
 
         $titles = DB::table('equipment_registration')->get();
+        // dd($titles);
         return view('home',['titles' => $titles]);
     }
     public function equipment_registration(){
