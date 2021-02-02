@@ -103,3 +103,9 @@ body {
 .i-foot{
     background-image: linear-gradient(white,white,rgb(159, 243, 159));
 }
+.truncate {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

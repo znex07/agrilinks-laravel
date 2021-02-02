@@ -122,25 +122,23 @@
     <div class="row mb-5">
 
         @foreach($posts as $post)
-        <div class="col">
-            <div class="card" style="width: 100%; height: 350px;">
-                <img src="{{ Voyager::image( $post->image ) }}" style="width: 100%; height: 200px;">
-                <div class="card-body">
-                    <a href="/post/{{ $post->slug }}">
-                        <span><h6>{!! Str::limit($post->title, 50) !!}</h6></span>
-                    </a>
+        <div class="col mb-2">
+            <div class="card h-100" style="max-height: 400px">
+                <img class=".card-img-top" src="{{ Voyager::image( $post->image ) }}" style="width: 100%; height: 120px;">
 
-                    <p class="card-text font-weight-light" >{!! Str::limit($post->body,200) !!}</p>
+                <div class="card-body flex-fill">
+                    <h6 ><a href="/post/{{ $post->slug }}">{!! Str::limit($post->title, 15) !!}</a></h6>
+                    <h6 class="truncate">{!! $post->body !!}</h6>
                 </div>
                 <div class="card-footer">
                 <button class="btn btn-info btn-block">Read more</button>
-            </div>
+                </div>
             </div>
         </div>
         @endforeach
 
      </div>
-    </div>
+</div>
 
     <!-- Content Row -->
     <div id="m-page">
