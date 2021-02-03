@@ -59,9 +59,8 @@ body {
 }
 
 #login-div{
-  background-color: rgb(250, 239, 223);
-  padding: 10px;
-
+    background-color: rgb(250, 239, 223);
+    padding: 10px;
     opacity: 0.65;
 }
 
@@ -79,7 +78,7 @@ body {
 }
 
 #n-page{
-  height: 600px;
+  /* height: 600px; */
   width: auto;
   margin: 1%;
   display: block;
@@ -102,10 +101,4 @@ body {
 
 .i-foot{
     background-image: linear-gradient(white,white,rgb(159, 243, 159));
-}
-.truncate {
-    width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }

@@ -5,22 +5,22 @@
 <!-- Page Content -->
 <div class="container" id="h-page" style="background: rgba(82, 65, 22, 0.35)">
     <!-- Heading Row -->
-    <div class="row d-flex justify-content-center"  style="max-height:650px">
-    <div class="col-8 ">
+    <div class="row d-flex justify-content-center">
+    <div class="col-10" >
         <div id="carouselExampleIndicators" class="carousel slide my-2" data-interval="5000" data-ride="carousel" >
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner py-2 px-1" role="listbox"  style="height:400px; background: rgba(47, 85, 44, 0.35);">
-            <div class="carousel-item active">
+          <div class="carousel-inner py-2 px-1" style="height: 500px" role="listbox"  style=" background: rgba(47, 85, 44, 0.35);">
+            <div class="carousel-item active" >
                 {{-- @extends('layouts.login') --}}
               {{-- <img class="d-block +img- w-900" src="{{ asset('img/item1.jpg') }}" alt="First slide"> --}}
               @guest
               <!-- login place -->
               @if (Route::has('login'))
-
+             <div class="login" >
               <h1 id="hd1" class="text-warning">Welcome to AgriLinks</h1>
                 <p class="text-center text-light">Website for Filipino farmers, food distributors and consumer</p>
               <div class="card rounded" id="login">
@@ -81,6 +81,7 @@
                                 </div>
                             </div>
                         </form>
+                  </div>
                     </div>
                 </div>
 
@@ -97,11 +98,11 @@
 
 
             </div>
-            <div class="carousel-item w-900">
-              <img class="d-block img-fluid" src="{{ asset('img/item2.jpg') }}" alt="Second slide">
+            <div class="carousel-item h-900" >
+              <img class="img-fluid" src="{{ asset('img/item2.jpg') }}" alt="Second slide">
             </div>
-            <div class="carousel-item w-900">
-              <img class="d-block img-fluid" src="{{ asset('img/item4.jpg') }}" alt="Third slide">
+            <div class="carousel-item h-900">
+              <img class="img-fluid" src="{{ asset('img/item4.jpg') }}" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -119,16 +120,16 @@
 <!-- end of login -->
 <!-- /.row -->
 <div id="n-page p-5"  style="padding-top: 80px;">
-    <div class="row mb-5">
+    <div class="row mb-5 news">
 
         @foreach($posts as $post)
         <div class="col mb-2">
             <div class="card h-100" style="max-height: 400px">
-                <img class=".card-img-top" src="{{ Voyager::image( $post->image ) }}" style="width: 100%; height: 120px;">
+                <img class=".card-img-top" src="{{ Voyager::image( $post->image ) }}" style="width: 100%; height: 150px;">
 
                 <div class="card-body flex-fill">
-                    <h6 ><a href="/post/{{ $post->slug }}">{!! Str::limit($post->title, 15) !!}</a></h6>
-                    <h6 class="truncate">{!! $post->body !!}</h6>
+                    <h6 ><a href="/post/{{ $post->slug }}">{!! Str::upper($post->title) !!}</a></h6>
+                    <h6 id="news-text{{$post->id}}" class="text-xs">{!! $post->body !!}</h6>
                 </div>
                 <div class="card-footer">
                 <button class="btn btn-info btn-block">Read more</button>
@@ -194,4 +195,23 @@
     </div>
     <!-- /.row -->
 {{-- </div> --}}
+<script>
+    var posts = [
+        @foreach($posts as $post)
+            [ "{{ $post->id }}" ],
+        @endforeach
+    ];
+
+    posts.forEach(getPost);
+    var newstext;
+    function getPost(item, index){
+      newstext = document.getElementById('news-text'+item);
+      var newstruncate = truncate(newstext.children[0].textContent,80);
+      newstext.innerHTML = newstruncate;
+    }
+    function truncate(str, n){
+        return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
+    };
+
+</script>
 @endsection
