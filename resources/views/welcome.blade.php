@@ -202,13 +202,13 @@
         @endforeach
     ];
 
-    posts.forEach(getPost);
-    var newstext;
-    function getPost(item, index){
+    posts.forEach(function getPost(item, index){
+        var newstext;
       newstext = document.getElementById('news-text'+item);
       var newstruncate = truncate(newstext.children[0].textContent,80);
       newstext.innerHTML = newstruncate;
-    }
+    });
+
     function truncate(str, n){
         return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
     };
